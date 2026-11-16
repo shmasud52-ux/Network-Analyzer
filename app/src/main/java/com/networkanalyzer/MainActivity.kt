@@ -143,7 +143,7 @@ private fun NetworkApp(
     MaterialTheme(colorScheme=darkColorScheme(primary=cyan,secondary=Color(0xFF91F2C3),background=bg,surface=panel)) {
         Column(Modifier.fillMaxSize().background(bg)) {
             Row(Modifier.fillMaxWidth().padding(20.dp),verticalAlignment=Alignment.CenterVertically) {
-                Icon(Icons.Default.Wifi,color=cyan,contentDescription=null,modifier=Modifier.size(32.dp))
+                Icon(Icons.Default.Wifi,contentDescription=null,modifier=Modifier.size(32.dp),tint=cyan)
                 Spacer(Modifier.width(12.dp))
                 Column(Modifier.weight(1f)) {
                     Text("NETWORK ANALYZER",fontWeight=FontWeight.Bold,letterSpacing=1.sp)
